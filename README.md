@@ -37,3 +37,15 @@ Here are some of the key custom DAX calculations implemented in the model:
 * **Total Claims Count:**
   ```dax
   Total Claims = COUNTROWS('Fact_Claims')
+
+  Total Claim Amount = SUM('Fact_Claims'[Claim_Amount]
+
+  Avg Claim Amount = DIVIDE([Total Claim Amount], [Total Claims], 0)
+
+  Loss Ratio = DIVIDE([Total Claim Amount], [Total Premium Collected], 0)
+
+
+  👩‍💻 Author
+Trisha Ghosh
+
+LinkedIn: https://www.linkedin.com/in/trisha-ghosh-0027a3399?utm_source=share_via&utm_content=profile&utm_medium=member_android
